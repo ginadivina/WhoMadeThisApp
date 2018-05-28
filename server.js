@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var path = require('path');
-var sqlite3 = require('sqlite3').verbose();
+// var sqlite3 = require('sqlite3').verbose();
 var app = express();
 
 app.set("view engine", "ejs")
@@ -19,9 +19,9 @@ app.get("/", function (req, res) {
     res.render("index.html")
 });
 
-app.get("/WhoMadeThisApp", function (req, res) {
-    var db = new sqlite3.Database('db.db');
-    db.all(`SELECT Name FROM WhoMadeThisApp`, function(err,rows) {
-    	res.send(rows);
-    });
-});
+// app.get("/WhoMadeThisApp", function (req, res) {
+//     var db = new sqlite3.Database('db.db');
+//     db.all(`SELECT Name FROM WhoMadeThisApp`, function(err,rows) {
+//     	res.send(rows);
+//     });
+// });
