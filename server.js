@@ -20,8 +20,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/WhoMadeThisApp", function (req, res) {
-    var db = new sqlite3.Database('db.db');
-    db.all(`SELECT Name FROM WhoMadeThisApp`, function(err,rows) {
-    	res.send(rows);
-    });
+    // var db = new sqlite3.Database('db.db');
+    // db.all(`SELECT Name FROM WhoMadeThisApp`, function(err,rows) {
+    // 	res.send(rows);
+    // });
 });
